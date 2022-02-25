@@ -47,7 +47,7 @@ public class MarkdownParseTest {
         ArrayList<String> links = MarkdownParse.getLinks(contents);
         
         assertEquals("The test-file.md file gives the correct output", 
-        List.of("60google.com, google.com, ucsd.edu"), links  );
+        List.of("`google.com, google.com, ucsd.edu"), links  );
     }
 
     @Test 
